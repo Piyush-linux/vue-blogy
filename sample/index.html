@@ -1,0 +1,126 @@
+<!-- 
+	1: #74b9ff
+	2: #ff7675
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <style type="text/css">
+    .iconify{
+    	font-size: 3rem;
+    }
+    .blg {
+        border: 2px solid #74b9ff;
+        /*border: 2px solid #fab1a0;*/
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+
+    .content .title {
+        color: #34495e;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="https://image.flaticon.com/icons/png/512/5393/5393225.png">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        <div class="field">
+                            <span class="control">
+                                <input type="text" class="input" placeholder="S E A R C H">
+                            </span>
+                        </div>
+                    </a>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-dark is-outlined">
+                                C R E A T E
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- blog -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <!-- blg1 -->
+                <div class="column is-full blg">
+                    <!-- blg_con_1 -->
+                    <div class="columns">
+                        <div class="column is-10">
+                            <div class="content is-medium has-text-grey">
+                                <h1 class="title">Cat</h1>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            
+                        </div>
+                        <div class="column">
+                            <!-- delete -->
+                        	<div class="field has-text-right">
+                                <div class="control">
+                                    <button class="button is-rounded is-danger is-outlined">
+                                    	<span class="icon">
+                                        	<span class="iconify" data-icon="ant-design:delete-outlined"></span>
+                                    	</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- zoom -->
+                            <div class="field has-text-right">
+                            	<div class="control">
+                            		<button class="button is-rounded is-success is-outlined">
+                                    	<span class="icon">
+                                        	<span class="iconify" data-icon="fluent:arrow-expand-24-filled"></span>
+                                    	</span>
+                                    </button>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- model
+    .modal.is-active
+    .modal-close
+     -->
+    <section class="section">
+        <div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    hello
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+    </section>
+</body>
+<script>
+    
+</script>
+
+</html>
