@@ -36,21 +36,7 @@
                 </div>
             </div>
         </div>
-        <!-- computed :>  modal -->
-        <div class="modal" ref="blogModal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box section">
-                    <div class="content is-medium">
-                        <h1 class="title">
-                            {{ modal.title }}
-                        </h1>
-                        {{ modal.content }}
-                    </div>
-                </div>
-            </div>
-            <button class="modal-close is-large" aria-label="close" @click="closeBlog('blogModal')"></button>
-        </div>
+        
        
     </section>
 </template>
@@ -58,28 +44,22 @@
 export default {
     name: 'Blog',
     props:["blgs"],
-    data() {
-        return {
-            id: 3,
-            openView: 0,
-        }
-    },
+    // data() {
+    //     return {
+            
+    //     }
+    // },
     methods: {
         // del,open
         openBlog(id) {
             this.$emit('emitOpenBlog',id)
         },
         deleteBlog(e) {
-          this.$emit('emitDeleteBlog',e)  
+          this.$emit('emitDeleteBlog',e) 
+          console.log(e) 
         },
     },
-    computed: {
-        modal() {
-            let id = this.openView
-            let blog = this.blgs[id]
-            return blog
-        }
-    }
+   
     // props: {
     //   msg: String
     // }

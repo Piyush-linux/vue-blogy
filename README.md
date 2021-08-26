@@ -1,4 +1,7 @@
 # blogy
+- [x] Create Blog
+    - [x] clear con in form of create form
+- [x] search blog
 
 ## Project setup
 ```
@@ -14,29 +17,31 @@ npm run build
 ```yaml
 # Component
 A: App
-B: Nav : create & search
-C: Blog : Display / delete Blog
+B: Nav
+C: Blog
 
-# A P P
+# A : A P P
 data: 
-    - blgs > C
+    - blgs -> C     : blogs
 meth:
-    - crtBlg: < B
-    - delBlg: < C
-    - viewBlg: < C 
-    - updtBlg: < C
-    - srchBlg: < B && > C
-# N A V
+    - B -> crtBlg   : Create blog
+    - C -> delBlg   : Delete Blog
+    - C -> viewBlg  : Zoom Blog
+    - C -> updtBlg  :
+    - (B -> srchBlg ) && -> C : 
+    - C -> clMdl    : close model
+
+# B : N A V
 data:
     - New Blog > A
     - search > A > C
 mth:
     - crtBlg: "> A"
 
-# B L O G
+# C : B L O G
 data:
-    -> blgs : Display All blogs
-    -> search : Display Matching Char Only
-    - deleted Blog > A
+    A -> blgs : Display All blogs
+    B -> search : Display Matching Char Only
+    deleted Blog -> A : delete blogs
 
 ```
